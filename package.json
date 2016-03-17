@@ -52,8 +52,9 @@
     "seneca": "^1.4.0"
   },
   "scripts": {
-    "debug": "node debug app.js",
-    "start": "node app.js"
+    "debug": "sails debug & node-inspector",
+    "start": "sails lift",
+    "test": "mocha test/bootstrap.test.js test/integration/**/*.test.js"
   },
   "main": "app.js",
   "repository": {
@@ -70,6 +71,7 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-tslint": "^4.3.3",
     "gulp-typescript": "^2.12.1",
+    "supertest": "^1.2.0",
     "tslint": "^3.6.0",
     "typescript": "^1.9.0-dev.20160315"
   }

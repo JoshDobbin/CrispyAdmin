@@ -11,7 +11,7 @@ function MessageBus() {
     sails.log.info('Loading SenecaJs plugins from ./handlers');
     
     _.each(plugins, function (plugindesc) {
-        sails.log.debug('Seneca plugin loading:\n  ' + plugindesc);
+        //sails.log.debug('Seneca plugin loading:\n  ' + plugindesc);
         seneca.use(plugindesc)
     })
     

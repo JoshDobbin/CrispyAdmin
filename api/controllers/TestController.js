@@ -15,6 +15,13 @@ module.exports = {
             .then(function(result){
                 res.json(result)
             });
+    },
+    
+    ProcessMessage2: function(req, res) {
+        return MessageBus.publish({ role: 'test2', cmd: 'test_1', itemId: '100' })
+            .then(function(result){
+                res.json(result)
+            });
     }
 };
 
