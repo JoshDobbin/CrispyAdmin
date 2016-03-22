@@ -1,0 +1,26 @@
+{
+  "name": "CrispyAdmin",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Josh Dobbin"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/JoshDobbin/CrispyAdmin",
+  "moduleType": [
+    "amd",
+    "es6"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "AdminLTE": "admin-lte#^2.3.2",
+    "PACE": "pace#^1.0.2"
+  }
+}
