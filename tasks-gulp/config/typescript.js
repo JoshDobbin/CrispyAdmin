@@ -50,9 +50,9 @@ module.exports = function(gulp, plugins, growl) {
             .pipe(sourcemaps.init())
             .pipe(ts(tsProject));
 
-        tsResult.dts.pipe(gulp.dest('./built/app/'));
+        tsResult.dts.pipe(gulp.dest('./built/js/'));
         return tsResult.js
             .pipe(sourcemaps.write('.'))
-            .pipe(gulp.dest('./built/app/'));
+            .pipe(gulp.dest('./built/js/'));
     });  
 };
