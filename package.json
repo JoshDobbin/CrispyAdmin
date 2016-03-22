@@ -19,11 +19,13 @@
     "seneca": "^1.4.0"
   },
   "scripts": {
+    "preinstall": "npm run bower install",
     "postinstall": "npm run typings install",
     "debug": "sails debug & node-inspector",
     "start": "sails lift",
     "test": "mocha test/bootstrap.test.js test/integration/**/*.test.js",
-    "typings": "typings"
+    "typings": "typings",
+    "bower": "bower"
   },
   "main": "app.js",
   "repository": {
