@@ -53,3 +53,4 @@ config/local.js
 # build pipeline
 ########################
 built
+typings
