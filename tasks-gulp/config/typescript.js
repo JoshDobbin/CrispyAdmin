@@ -44,7 +44,7 @@ module.exports = function(gulp, plugins, growl) {
     gulp.task('compile-ts', function () {
         var sourceTsFiles = [
             './assets/js/**/*.ts', //path to typescript files
-            './tools/**/*.d.ts'];  //reference to library .d.ts files
+            './typings/main.d.ts'];  //reference to library .d.ts files
 
         var tsResult = gulp.src(sourceTsFiles)
             .pipe(sourcemaps.init())

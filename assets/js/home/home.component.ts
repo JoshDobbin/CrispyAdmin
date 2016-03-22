@@ -1,5 +1,5 @@
 // home.component.js
-import { Component, View } from 'angular2/core';
+import { Component } from 'angular2/core';
 import { Router, RouterLink, ComponentInstruction, CanActivate } from 'angular2/router';
 import { CORE_DIRECTIVES, NgIf } from 'angular2/common';
 import { DataService } from '../shared/services/data.service';
@@ -9,10 +9,7 @@ import { Auth } from '../auth_module/auth/auth';
 
 @Component({
   selector: 'home',
-  providers: [DataService]
-})
-
-@View({
+  providers: [DataService],
   templateUrl: 'src/app/home/home.component.html',
   directives: [DashboardLayoutComponent, NgIf]
 })
