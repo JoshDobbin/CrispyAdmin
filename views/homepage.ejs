@@ -24,20 +24,20 @@
     <script>
       System.config({
         map: {
-          app: "./src"
+          app: "./js/app"
         },
         baseURL: '/node_modules',
         defaultJSExtensions: true,
         warnings: true,
         packages: {
-          'src/app': {
+          'js/app': {
             format: 'register',
-            defaultExtension: 'ts'
+            defaultExtension: 'js'
           }
         }
       });
 
-      System.import ('./src/app/main').then(null, console.error.bind(console));
+      System.import ('./js/app/app').then(null, console.error.bind(console));
 
       $(document).ajaxStart(function () {
         Pace.restart();
