@@ -9,7 +9,8 @@
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true
+    "suppressImplicitAnyIndexErrors": true,
+    "outFile": "app.js"
   },
   "exclude": [
     "node_modules",

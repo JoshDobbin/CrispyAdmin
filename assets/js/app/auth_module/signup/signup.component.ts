@@ -18,7 +18,7 @@ declare var jQuery: JQueryStatic;
     selector: 'signup',
     providers: [DataService, Auth],
     directives: [FORM_DIRECTIVES, RouterLink],
-    templateUrl: 'src/app/auth_module/signup/signup.component.html',
+    templateUrl: 'js/app/auth_module/signup/signup.component.html',
     styles: [`
       body {
           background: #d2d6de;

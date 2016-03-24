@@ -10,7 +10,7 @@ import { Auth } from '../auth_module/auth/auth';
 @Component({
   selector: 'home',
   providers: [DataService],
-  templateUrl: 'src/app/home/home.component.html',
+  templateUrl: 'js/app/home/home.component.html',
   directives: [DashboardLayoutComponent, NgIf]
 })
 

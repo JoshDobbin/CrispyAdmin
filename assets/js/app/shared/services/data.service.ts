@@ -9,7 +9,7 @@ import 'rxjs/add/operator/catch';
 export class DataService {
 
     // API path
-    baseUrl: string = '/src';
+    baseUrl: string = '/js/app';
 
     constructor(private _http: Http, private _config: Config) { }
 

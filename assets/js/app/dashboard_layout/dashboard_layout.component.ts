@@ -9,7 +9,7 @@ import { Auth, LoginDataInterface } from '../auth_module/auth/auth';
 @Component({
     selector: 'dashboard-layout',
     inputs: ['pageTitle', 'pageSubtitle'],
-    templateUrl: 'src/app/dashboard_layout/dashboard_layout.component.html',
+    templateUrl: 'js/app/dashboard_layout/dashboard_layout.component.html',
     providers: [DataService],
     directives: [ROUTER_DIRECTIVES, NgIf]
 })

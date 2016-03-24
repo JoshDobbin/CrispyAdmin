@@ -15,7 +15,7 @@ import { checkAuth } from '../auth/check_auth';
     selector: 'login',
     providers: [DataService, Auth],
     directives: [RouterLink],
-    templateUrl: 'src/app/auth_module/login/login.component.html',
+    templateUrl: 'js/app/auth_module/login/login.component.html',
     styles: [`
       body {
           background: #d2d6de;
