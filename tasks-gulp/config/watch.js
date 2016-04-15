@@ -10,8 +10,9 @@
  *
  *
  */
+var server = require('gulp-livereload');
+
 module.exports = function(gulp, plugins, growl) {
-	var server = plugins.livereload();
 	gulp.task('watch:api', function() {
 		// Watch Style files
 		return gulp.watch('api/**/*', ['syncAssets'])
@@ -19,7 +20,7 @@ module.exports = function(gulp, plugins, growl) {
 					server.changed(file.path);
 				});
 	});
-	
+
 	gulp.task('watch:assets', function() {
 		// Watch assets
 		return gulp.watch(['assets/**/*', 'tasks/pipeline.js'], ['syncAssets'])
