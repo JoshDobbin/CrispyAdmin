@@ -6,6 +6,7 @@ module.exports = function (gulp, plugins) {
 			'concat:css',
 			'uglify:dist',
 			'cssmin:dist',
+            'bower',
 			'sails-linker-gulp:prodAssets',
 			'sails-linker-gulp:prodViews',
             'images',
